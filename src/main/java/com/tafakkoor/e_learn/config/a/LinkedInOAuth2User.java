@@ -18,6 +18,7 @@ public class LinkedInOAuth2User implements OAuth2User {
     public Map<String, Object> getAttributes() {
         Map<String, Object> attributes = delegate.getAttributes();
         attributes.entrySet().forEach(System.out::println);
+
         // Map the LinkedIn profile attributes to your user object
         return attributes;
     }
